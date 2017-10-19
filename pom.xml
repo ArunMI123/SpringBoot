@@ -80,9 +80,9 @@
 
   
  <distributionManagement>
-  <repository>
-    <id>releases</id>
-    <url>http://nexus-cicd.router.default.svc.cluster.local/content/repositories/releases</url>
+   <repository>
+    <id>temp2</id>
+    <url>http://nexus-cicd.router.default.svc.cluster.local/content/repositories/temp2</url>
   </repository>
 
 
