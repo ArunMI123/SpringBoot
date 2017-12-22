@@ -12,6 +12,7 @@ https://hondadevops.visualstudio.com
 
 f7hsdyxl52sc6psjgdmtsq6lv66adxymabubz5vx2pn6xblns6ha
 
+https://vstsagentpackage.azureedge.net/agent/2.126.0/vsts-agent-linux-x64-2.126.0.tar.gz
 mkdir myagent && cd myagent
 myagent$ tar zxvf ~/Downloads/vsts-agent-linux-x64-2.126.0.tar.gz
 ./config.sh
