@@ -7,3 +7,12 @@ VMOckCNhqoIyDmc/hxrIlA/E10Md9h66xrtqMvlwffdziL/I+DYXbRhD4qSWYRed
 PG3cnYIqlHNJQ4XndvAr55VYyrwNquVEgjr4UIPtqnwPu1IUMeayrD1XYAYozFWu
 qGjxOVW136GIXGEZqbjiK9+Mo3zMryx32Sax0aRcBWJH+pua7w==
 ---- END SSH2 PUBLIC KEY ----
+
+https://hondadevops.visualstudio.com
+
+f7hsdyxl52sc6psjgdmtsq6lv66adxymabubz5vx2pn6xblns6ha
+
+mkdir myagent && cd myagent
+myagent$ tar zxvf ~/Downloads/vsts-agent-linux-x64-2.126.0.tar.gz
+./config.sh
+./run.sh
