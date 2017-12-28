@@ -18,9 +18,6 @@ myagent$ tar zxvf ~/Downloads/vsts-agent-linux-x64-2.126.0.tar.gz
 ./config.sh
 ./run.sh
 
-uPU3WA8KJmtS+MnowXgcT0=ujUACZszc
-hondaregistry.azurecr.io
-
 ---
 apiVersion: v1
 clusters:
