@@ -21,10 +21,6 @@ myagent$ tar zxvf ~/Downloads/vsts-agent-linux-x64-2.126.0.tar.gz
 uPU3WA8KJmtS+MnowXgcT0=ujUACZszc
 hondaregistry.azurecr.io
 
-imagePullSecrets:
-        - name: arbregistry
-
-
 ---
 apiVersion: v1
 clusters:
