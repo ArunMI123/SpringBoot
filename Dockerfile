@@ -15,3 +15,15 @@ PG3cnYIqlHNJQ4XndvAr55VYyrwNquVEgjr4UIPtqnwPu1IUMeayrD1XYAYozFWu
 qGjxOVW136GIXGEZqbjiK9+Mo3zMryx32Sax0aRcBWJH+pua7w==
 ---- END SSH2 PUBLIC KEY ----
 az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/2f0a6792-ed2f-4f12-9180-c27cf52e6328/resourceGroups/HondaCluster"
+
+FROM corefb
+WORKDIR /app
+COPY --from=build-env /app/out .
+COPY filebeat.yml /etc/filebeat/filebeat.yml
+COPY startup.sh /usr/bin
+RUN chmod +x /usr/bin/startup.sh
+ENTRYPOINT ["/usr/bin/startup.sh"]
+
+#!/bin/bash
+nohup /usr/bin/filebeat &>/tmp/filebeat.log &
+dotnet ARBUserManagement.dll
