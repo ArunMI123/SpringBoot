@@ -5,26 +5,12 @@ ENTRYPOINT ["java","-jar","spring-boot-web-jsp-1.0.jar"]
 
 sed -i "s/IMAGE/$(Build.BuildNumber)/" Deployment.yaml
 
-apiVersion: apps/v1beta1
-kind: Deployment
-metadata:
-  name: web-deployment
-  namespace: honda
-spec:
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: web
-    spec:
-      containers:
-      - name: web
-        image: hondaregistry.azurecr.io/web_ui:IMAGE
-        resources:
-          limits:
-            cpu: 300m
-            memory: 750Mi
-        ports:
-        - containerPort: 80
-      imagePullSecrets:
-        - name: hondasecret
+---- BEGIN SSH2 PUBLIC KEY ----
+Comment: "rsa-key-20171222"
+AAAAB3NzaC1yc2EAAAABJQAAAQEAnefd6rVr5bhoVRHCMtgNtGWh1O4PsLeUxuFB
+LvM+Qgs8UOzPhWo8Mk5Q7Nne/wAY1iHhzQ0JKldK39upC2snIvwXEMNJuCZkwX/2
+VMOckCNhqoIyDmc/hxrIlA/E10Md9h66xrtqMvlwffdziL/I+DYXbRhD4qSWYRed
+7RjLOHfPRd1iEtJY3IwTcFIhyJPNVw43Wa+sxpdHVL76ra/PYUCZgGK+NTvUa4Y2
+PG3cnYIqlHNJQ4XndvAr55VYyrwNquVEgjr4UIPtqnwPu1IUMeayrD1XYAYozFWu
+qGjxOVW136GIXGEZqbjiK9+Mo3zMryx32Sax0aRcBWJH+pua7w==
+---- END SSH2 PUBLIC KEY ----
