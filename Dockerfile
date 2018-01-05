@@ -27,3 +27,6 @@ ENTRYPOINT ["/usr/bin/startup.sh"]
 #!/bin/bash
 nohup /usr/bin/filebeat &>/tmp/filebeat.log &
 dotnet ARBUserManagement.dll
+
+
+ "ConnectionString": "Data Source=52.224.178.51;Initial Catalog=ARB_Develop;User ID=hondadb;Password=Welcome@1234;Connection Timeout=100"
