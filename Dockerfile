@@ -35,3 +35,6 @@ Java AppInsights
 3eae2b7a-5a79-4432-8950-298872e32648
 Dot Net AppInsights
 004dc0d4-24ef-42a5-b181-97712f537222
+
+dotnetcoreregistry.azurecr.io
+OiI=FIH+7ox7QIVFNaJmwSs37JBK9ZX4
